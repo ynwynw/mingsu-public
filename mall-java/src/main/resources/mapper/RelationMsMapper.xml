@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.huang.mapper.RelationMsMapper">
+    <select id="queryDataList" parameterType="com.huang.bean.RelationMs" resultType="com.huang.bean.RelationMs">
+        select
+            id as id,
+            relation_name as relationName,
+            relation_dept as relationDept,
+            relation_place as relationPlace,
+            relation_date as relationDate,
+            relation_time as relationTime,
+            relation_price as relationPrice,
+            description as description,
+            delete_flag as deleteFlag,
+            create_date as createDate,
+            update_date as updateDate
+        from relation_ms
+        where 1=1
+        <if test="relationName!=null and relationName!=''">
+            and relation_name like concat('%',#{relationName},'%')
+        </if>
+            and delete_flag = 0
+    </select>
+</mapper>

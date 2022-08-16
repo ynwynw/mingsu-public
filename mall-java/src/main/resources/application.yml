@@ -1,0 +1,46 @@
+server:
+  port: 8081
+# DataSource Config
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/hsms?useUnicode=true&useSSL=false&characterEncoding=utf8&serverTimezone=Asia/Shanghai
+    username: root #你的数据库用户名
+    password: root #你的数据库密码
+  redis:
+    port: 6379
+    host: 127.0.0.1
+    database: 0
+  # mail 配置  不要邮箱功能就不用配，就是购买完商品后会有官方邮箱通知你的邮箱而已，装个逼
+  mail:
+    username: 你的邮箱
+    password: 你的邮箱官网提供的加密的密码
+    host: smtp.163.com #邮箱服务器
+#  security:
+#    user:
+#      password: 123456
+#      name: admin
+
+mybatis-plus:
+  mapper-locations: classpath*:/mapper/**Mapper.xml
+
+huang:
+  jwt:
+    header: Authorization
+    expire: 604800 #7\u5929\uFF0C\u79D2\u5355\u4F4D
+    secret: ji8n3439n439n43ld9ne9343fdfer49h
+
+
+# alipay 配置  不做支付宝支付就不用配这里，做了就是为了装个逼，可以手机用支付宝支付跳转页面而已
+alipay:
+  appId: 你的支付宝appId
+  privateKey: 私钥
+  publicKey: 公钥
+  #支付网关配置，这一项是写死的，正式环境是openapi.alipay.com
+  gateway: openapi.alipaydev.com
+  #支付成功之后的回调页面，只是一个友好页面。
+  returnUrl: http://localhost:8080/paymentsuccessful
+  #支付成功的接口回调
+  notifyUrl:
+
+
