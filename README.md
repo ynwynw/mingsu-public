@@ -8,7 +8,7 @@
 
 **毕业设计所有选题地址：[https://github.com/ynwynw/allProject](https://github.com/ynwynw/allProject)** 
 
-## 基于SpringBoot+vue的民宿预定管理系统
+## 基于SpringBoot+vue的民宿预定管理系统(源代码+数据库+7500字文档)033
 
 ## 一、系统介绍
 
