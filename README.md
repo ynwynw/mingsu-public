@@ -4,7 +4,7 @@
 
 **博客地址：[https://blog.csdn.net/2303_76227485/article/details/128662091](https://blog.csdn.net/2303_76227485/article/details/128662091)**
 
-**视频演示：[https://space.bilibili.com/384537280](https://space.bilibili.com/384537280)**
+**视频演示：[https://www.bilibili.com/video/BV1bh411K7Lf/](https://www.bilibili.com/video/BV1bh411K7Lf/)**
 
 **毕业设计所有选题地址：[https://github.com/ynwynw/allProject](https://github.com/ynwynw/allProject)** 
 
